@@ -1,11 +1,34 @@
-<h2>Child name: {{ name }}</h2>
-<p>Age: {{ age >= 2 ? "More than 2 years" : "Less than 2 years" }}</p>
-<!-- Interpolation -->
+<div class="info">
+  <h1>Child Name: {{ name }}</h1>
+  <p>Age: {{ age > 5 ? "More than 6 years" : "Less than 6 years" }}</p>
+  <!-- Interpolation -->
 
-<label>
-  Course:
-  <input type="text" #course />
-  <button type="submit" (click)="onSave(course.value)">Enter</button>
-</label>
+  <label>
+    Course:
+    <input type="text" #course />
+    <button type="submit" (click)="onSave(course.value)">Enter</button>
+  </label>
+  <p>
+    Course Attending: <strong>{{ course.value }}</strong>
+  </p>
 
-<p>Course Attending: {{ course.value }}</p>
+  <label>
+    Season:
+    <input type="text" #season (keyup)="(0)" />
+    <!-- dinamic text with keyup -->
+    <p>
+      Course Season: <strong>{{ season.value }}</strong>
+    </p>
+  </label>
+
+  <label>
+    Payment Done
+    <input
+      type="checkbox"
+      id="paid"
+      [checked]="paid"
+      (click)="setcoursePaid()"
+    />
+    <!-- binding -->
+  </label>
+</div>

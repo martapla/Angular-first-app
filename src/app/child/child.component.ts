@@ -11,11 +11,22 @@ import { Component, OnInit } from '@angular/core';
 
 export class ChildComponent implements OnInit{
   name = " Ann";
-  age = 4;
+  age = 6;
 
+  // Button submit course function
   onSave(value:String) {
-   
   }
+
+  //    Binding Property : Payment Done   //
+  paid = false;
+
+  // Event Binding  //
+  setcoursePaid() {
+    alert ("Course has been paid correctly")
+  }
+
+
+
   
   constructor() { }
   ngOnInit(): void {

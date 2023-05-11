@@ -1,10 +1,22 @@
-p {
-    color:rgb(246, 145, 2);
-    font-size: 22px;
+.info {
+   border:2px solid rgb(152, 152, 235);
+   border-radius: 10px;
+   width: 500px;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin: 100px;
+   background-color: aliceblue;
 }
 
-h2 {
-    color: orangered;
+p {
+    color:rgb(246, 145, 2);
+    font-size: 28px;
+}
+
+h1 {
+    color: rgb(65, 175, 248);
 }
 
 label {
