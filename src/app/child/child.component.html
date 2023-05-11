@@ -1,0 +1,11 @@
+<h2>Child name: {{ name }}</h2>
+<p>Age: {{ age >= 2 ? "More than 2 years" : "Less than 2 years" }}</p>
+<!-- Interpolation -->
+
+<label>
+  Course:
+  <input type="text" #course />
+  <button type="submit" (click)="onSave(course.value)">Enter</button>
+</label>
+
+<p>Course Attending: {{ course.value }}</p>
