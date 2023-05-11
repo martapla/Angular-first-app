@@ -25,6 +25,14 @@ export class ChildComponent implements OnInit{
     alert ("Course has been paid correctly")
   }
 
+  // Event Two Way Data Binding //
+  comment = "write a comment";
+
+  writeComment(event: Event) {
+    this.comment = (<HTMLInputElement>event.target).value;
+  }
+
+  
 
 
   
